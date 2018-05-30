@@ -1,0 +1,15 @@
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+#banner {
+  background-image: url(../img/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__logo {
+  height: 50px; }
+
+* {
+  background-color: red; }

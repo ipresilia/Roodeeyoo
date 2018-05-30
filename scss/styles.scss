@@ -1,0 +1,119 @@
+// VARIABLES
+// colors
+$white: #FFF;
+$primary: rgb(245, 79, 41);
+$secondary: rgb(255, 211, 147);
+$tertiary: rgb(54, 39, 63);
+$quaternary: rgb(112, 81, 130);
+
+// backgrounds
+$light_background: rgba($secondary, 0.2);
+$dark_background: $tertiary;
+
+// font
+$raleway-font-stack: 'Raleway', sans-serif;
+
+
+// MIXINS
+// buttons
+@mixin button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin button__primary {
+  background-color: $primary;
+}
+
+@mixin button__secondary {
+  background-color: $light_background;
+}
+
+@mixin button__secondary--small {
+  @include button__secondary;
+  padding: .3rem 1.5rem;
+}
+
+// GLOBAL STYLES
+body {
+  font-family: $raleway-font-stack;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  @include button;
+  &__primary {
+    @include button__primary;
+  }
+  &__secondary {
+    @include button__secondary;
+    &--small {
+      @include button__secondary--small;
+    }
+  }
+}
+
+
+
+
+// BANNER STYLES
+#banner {
+  background-image: url(../img/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .header {
+    padding: 2rem 0;
+    &__logo {
+      height: 75px;
+      float: left;
+      margin: 0;
+    }
+    &__content {
+      padding: 2rem 0 6rem 0;
+      &--title, &--subtitle {
+        color: $white;
+        text-align: center;
+      }
+      &--title {
+        font-size: 3.5rem;
+        width: 650px;
+        margin: 0 auto;
+        margin-bottom: 0.75rem;
+      }
+      &--subtitle {
+        font-weight: 400;
+        font-size: 1.35rem;
+        width: 550px;
+        margin: 0 auto 2rem auto;
+        line-heght: 1.75;
+      }
+      .button_wrapper {
+        text-align: center;
+        margin: 3rem 0;
+        .button {
+          margin: 0 .75rem;
+        }
+      }
+    }
+  }
+  nav {
+    float: right;
+    a {
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2rem;
+    }
+  }
+}

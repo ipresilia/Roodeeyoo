@@ -1,0 +1,63 @@
+body {
+  font-family: "Raleway", sans-serif; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center; }
+  .button__primary {
+    background-color: #f54f29; }
+  .button__secondary {
+    background-color: rgba(255, 211, 147, 0.2); }
+    .button__secondary--small {
+      background-color: rgba(255, 211, 147, 0.2);
+      padding: .3rem 1.5rem; }
+
+#banner {
+  background-image: url(../img/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #banner .header {
+    padding: 2rem 0; }
+    #banner .header__logo {
+      height: 75px;
+      float: left;
+      margin: 0; }
+    #banner .header__content {
+      padding: 2rem 0 6rem 0; }
+      #banner .header__content--title, #banner .header__content--subtitle {
+        color: #FFF;
+        text-align: center; }
+      #banner .header__content--title {
+        font-size: 3.5rem;
+        width: 650px;
+        margin: 0 auto;
+        margin-bottom: 0.75rem; }
+      #banner .header__content--subtitle {
+        font-weight: 400;
+        font-size: 1.35rem;
+        width: 550px;
+        margin: 0 auto 2rem auto;
+        line-heght: 1.75; }
+      #banner .header__content .button_wrapper {
+        text-align: center;
+        margin: 3rem 0; }
+        #banner .header__content .button_wrapper .button {
+          margin: 0 .75rem; }
+  #banner nav {
+    float: right; }
+    #banner nav a {
+      color: #FFF;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2rem; }
